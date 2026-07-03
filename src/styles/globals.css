@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  background: #faf9f7;
+  color: #1b1b1b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* font-weight: inherit; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  overflow: hidden;
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-garamond: "EB Garamond", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif !important;
+}
+
+.font-eb-garamond {
+  font-family: "EB Garamond", serif !important;
+}
