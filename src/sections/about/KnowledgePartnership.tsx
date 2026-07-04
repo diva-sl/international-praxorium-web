@@ -47,35 +47,78 @@ const KnowledgePartnership = () => {
               once: true,
             }}
           >
-            <div className="flex items-start gap-4">
+            <div
+              className="
+    relative
+
+    inline-flex
+
+    items-start
+  "
+            >
+              {/* Quotation */}
+
               <img
                 src={quotation}
                 alt="Quotation"
                 className="
-                  w-9
-                  h-9
-                  md:w-10
-                "
+      w-14
+      h-14
+
+      sm:w-16
+      sm:h-16
+
+      md:w-20
+      md:h-20
+
+      lg:w-24
+      lg:h-24
+
+      xl:w-28
+      xl:h-28
+
+      object-contain
+    "
               />
 
-              <div className="pt-3">
-                <span
-                  className="
-                    font-inter
-                    font-semibold
+              {/* WHO WE ARE */}
+              <span
+                className="
+    absolute
 
-                    uppercase
+    left-8
+    top-6
 
-                    tracking-[0.14em]
+    sm:left-10
+    sm:top-8
 
-                    text-[12px]
+    md:left-14
+    md:top-10
 
-                    text-[#631015]
-                  "
-                >
-                  WHO WE ARE
-                </span>
-              </div>
+    lg:left-18
+    lg:top-14
+
+    xl:left-24
+    xl:top-18
+
+    font-inter
+    font-semibold
+
+    uppercase
+    tracking-[0.14em]
+
+    text-[10px]
+    sm:text-[11px]
+    md:text-[12px]
+    lg:text-[12px]
+
+    whitespace-nowrap
+
+    text-[#631015]
+  "
+              >
+                WHO WE ARE
+              </span>
             </div>
             <h2
               className="
