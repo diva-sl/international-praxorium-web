@@ -1,75 +1,189 @@
-# React + TypeScript + Vite
+# International Praxorium Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern, and fully responsive website developed for **International Praxorium**, a global alliance of specialist schools committed to advancing education, research, and professional practice through international collaboration.
 
-Currently, two official plugins are available:
+The project focuses on elegant design, reusable components, responsive layouts, smooth animations, and maintainable architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Responsive educational institution website built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Modern responsive UI
+- Pixel-perfect layout
+- Fully responsive design
+- Smooth page animations
+- Component-based architecture
+- Reusable UI components
+- Professional typography
+- Interactive sections
+- Optimized performance
+- Mobile-first approach
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Technology Stack
 
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- Framer Motion
+- React Router
+- Swiper.js
+- Lucide React
+- React Icons
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│
+├── components/
+│   ├── layout/
+│   ├── ui/
+│
+├── sections/
+│   ├── home/
+│   ├── about/
+│
+├── pages/
+│
+├── routes/
+│
+├── hooks/
+│
+├── styles/
+│
+└── App.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Pages
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Home
+- About
+- Programmes
+- Governance
+- Contact
 
+---
+
+## Home Sections
+
+- Hero Banner
+- Mission
+- Statistics
+- Programmes
+- Specialist Schools
+- Footer
+
+---
+
+## About Sections
+
+- About Banner
+- Meaning of Praxorium
+- Knowledge Partnership
+- Strategy
+- Values & Mission
+- Spirit of Praxorium
+- Governance
+- CTA Banner
+
+---
+
+## Design Features
+
+- EB Garamond Typography
+- Inter Typography
+- Premium Card Design
+- Editorial Layout
+- Smooth Animations
+- Custom SVG Icons
+- Responsive Grid System
+- Elegant Color Palette
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/international-praxorium-web.git
 ```
+
+Navigate to the project
+
+```bash
+cd international-praxorium-web
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build production
+
+```bash
+npm run build
+```
+
+Preview production
+
+```bash
+npm run preview
+```
+
+---
+
+## Performance
+
+- Optimized Images
+- Lazy Loaded Components
+- Reusable Components
+- Responsive Assets
+- Accessible HTML Structure
+- Smooth Animations
+
+---
+
+## Author
+
+**Divakaran S**
+
+Frontend Developer
+
+- React
+- TypeScript
+- Node.js
+- Express.js
+- PostgreSQL
+- Tailwind CSS
+
+---
+
+## License
+
+This project is created for educational and portfolio purposes.
