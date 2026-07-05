@@ -4,8 +4,10 @@ import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
-// import Programs from "../pages/Programs/Programs";
-// import Schools from "../pages/Schools/Schools";
+import Programs from "../pages/Programs/Programs";
+import Schools from "../pages/Schools/Schools";
+import LivingLab from "../pages/Schools/LivingLab/LivingLab";
+
 // import Governance from "../pages/Governance/Governance";
 // import Contact from "../pages/Contact/Contact";
 // import NotFound from "../pages/NotFound/NotFound";
@@ -16,11 +18,13 @@ const AppRoutes = () => {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/schools" element={<Schools />} />
+
+        <Route path="/schools/living-lab" element={<LivingLab />} />
         {/* 
 
-        <Route path="/programs" element={<Programs />} />
 
-        <Route path="/schools" element={<Schools />} />
 
         <Route path="/governance" element={<Governance />} />
 

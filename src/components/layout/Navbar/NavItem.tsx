@@ -10,29 +10,80 @@ const NavItem = ({ item }: Props) => {
   if (item.children) {
     return (
       <div className="group relative">
-        <button className="flex items-center gap-1 text-[15px] font-medium text-[#222] transition hover:text-[#741C28]">
-          {item.label}
-          <ChevronDown size={16} strokeWidth={2} />
-        </button>
+        {/* Parent Link */}
+
+        <NavLink
+          to={item.href}
+          className={({ isActive }) =>
+            `
+          relative
+          flex
+          items-center
+          gap-1
+          pl-3
+
+          text-[15px]
+          font-medium
+
+          transition-all
+          duration-300
+
+          ${isActive ? "text-[#741C28]" : "text-[#222] hover:text-[#741C28]"}
+        `
+          }
+        >
+          {({ isActive }) => (
+            <>
+              {isActive && (
+                <span className="absolute left-0 h-7 w-[2px] bg-[#741C28]" />
+              )}
+
+              <span>{item.label}</span>
+
+              <ChevronDown
+                size={16}
+                strokeWidth={2}
+                className="
+                transition-transform
+                duration-300
+                group-hover:rotate-180
+              "
+              />
+            </>
+          )}
+        </NavLink>
+
+        {/* Dropdown */}
 
         <div
           className="
           invisible
+
           absolute
           left-0
           top-full
+
           z-50
+
           mt-5
           w-72
+
           overflow-hidden
+
           rounded-xl
+
           border
-          border-gray-100
+          border-[#ECE7E3]
+
           bg-white
+
           opacity-0
+
           shadow-xl
+
           transition-all
           duration-300
+
           group-hover:visible
           group-hover:opacity-100
         "
@@ -41,7 +92,28 @@ const NavItem = ({ item }: Props) => {
             <NavLink
               key={child.href}
               to={child.href}
-              className="block border-b px-6 py-4 text-sm transition hover:bg-gray-50 hover:text-[#741C28]"
+              className={({ isActive }) =>
+                `
+              block
+
+              border-b
+              border-[#F3F3F3]
+
+              px-6
+              py-4
+
+              font-inter
+              text-[14px]
+
+              transition
+
+              ${
+                isActive
+                  ? "bg-[#F8F5F3] text-[#741C28]"
+                  : "text-[#333] hover:bg-[#F8F5F3] hover:text-[#741C28]"
+              }
+            `
+              }
             >
               {child.label}
             </NavLink>
@@ -50,7 +122,6 @@ const NavItem = ({ item }: Props) => {
       </div>
     );
   }
-
   return (
     <NavLink
       to={item.href}
