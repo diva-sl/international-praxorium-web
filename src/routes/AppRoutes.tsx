@@ -8,8 +8,8 @@ import Programs from "../pages/Programs/Programs";
 import Schools from "../pages/Schools/Schools";
 import LivingLab from "../pages/Schools/LivingLab/LivingLab";
 
-// import Governance from "../pages/Governance/Governance";
-// import Contact from "../pages/Contact/Contact";
+import Governance from "../pages/Governance/Governance";
+import Contact from "../pages/Contact/Contact";
 // import NotFound from "../pages/NotFound/NotFound";
 
 const AppRoutes = () => {
@@ -22,13 +22,14 @@ const AppRoutes = () => {
         <Route path="/schools" element={<Schools />} />
 
         <Route path="/schools/living-lab" element={<LivingLab />} />
+        <Route path="/governance" element={<Governance />} />
+        <Route path="/contact" element={<Contact />} />
+
         {/* 
 
 
 
-        <Route path="/governance" element={<Governance />} />
 
-        <Route path="/contact" element={<Contact />} />
       </Route>
 
       <Route path="*" element={<NotFound />} /> */}
