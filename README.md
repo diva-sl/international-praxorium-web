@@ -274,6 +274,6 @@ All rights reserved.
 
 **Divakaran S**
 
-Frontend Developer
+Full-Stack Developer
 
 React • TypeScript • Vite • Tailwind CSS • Framer Motion
