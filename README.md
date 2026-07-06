@@ -1,73 +1,35 @@
-# International Praxorium Website
+# International Praxorium
 
-A premium, modern, and fully responsive website developed for **International Praxorium**, a global alliance of specialist schools committed to advancing education, research, and professional practice through international collaboration.
+An elegant, modern, and fully responsive educational alliance website built with React, TypeScript, Vite, and Tailwind CSS. The platform showcases the International Praxorium's global vision, governance, schools, partnerships, and academic initiatives through a premium editorial design.
 
-The project focuses on elegant design, reusable components, responsive layouts, smooth animations, and maintainable architecture.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-0055FF)
 
 ---
 
-## Preview
+## Overview
 
-> Responsive educational institution website built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
+International Praxorium is a global educational alliance connecting universities, research institutions, industries, and innovation ecosystems.
+
+This website presents the alliance through an editorial-style experience focused on academic excellence, governance, research collaboration, and institutional partnerships.
 
 ---
 
 ## Features
 
-- Modern responsive UI
-- Pixel-perfect layout
+- Premium editorial UI/UX
 - Fully responsive design
-- Smooth page animations
-- Component-based architecture
-- Reusable UI components
-- Professional typography
-- Interactive sections
+- Modern React architecture
+- Smooth page transitions
+- Framer Motion animations
+- Modular component structure
 - Optimized performance
-- Mobile-first approach
-
----
-
-## Technology Stack
-
-- React 19
-- TypeScript
-- Vite
-- Tailwind CSS v4
-- Framer Motion
-- React Router
-- Swiper.js
-- Lucide React
-- React Icons
-
----
-
-## Project Structure
-
-```text
-src/
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│
-├── components/
-│   ├── layout/
-│   ├── ui/
-│
-├── sections/
-│   ├── home/
-│   ├── about/
-│
-├── pages/
-│
-├── routes/
-│
-├── hooks/
-│
-├── styles/
-│
-└── App.tsx
-```
+- Mobile-first layout
+- Clean typography
+- Accessible navigation
 
 ---
 
@@ -75,46 +37,107 @@ src/
 
 - Home
 - About
-- Programmes
 - Governance
+- Schools
+- Programs
+- Living Lab
 - Contact
+- 404 Page
 
 ---
 
-## Home Sections
+## Governance Modules
+
+- Governance Hero
+- Commons Governance Principles
+- Executive Board
+- Board for Academic Excellence
+- Operations & Leadership
+
+---
+
+## Contact Modules
 
 - Hero Banner
-- Mission
-- Statistics
-- Programmes
-- Specialist Schools
-- Footer
+- Introduction
+- Contact Information
+- Institutional Partnerships
+- Contact Form
+- Social Media Links
 
 ---
 
-## About Sections
+## Technology Stack
 
-- About Banner
-- Meaning of Praxorium
-- Knowledge Partnership
-- Strategy
-- Values & Mission
-- Spirit of Praxorium
-- Governance
-- CTA Banner
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- React Router DOM
+- Tailwind CSS
+- Framer Motion
+
+### Styling
+
+- Tailwind CSS
+- EB Garamond
+- Inter
+
+### Routing
+
+- React Router DOM
+
+### Animation
+
+- Framer Motion
 
 ---
 
-## Design Features
+## Folder Structure
 
-- EB Garamond Typography
-- Inter Typography
-- Premium Card Design
-- Editorial Layout
-- Smooth Animations
-- Custom SVG Icons
-- Responsive Grid System
-- Elegant Color Palette
+```text
+src
+│
+├── assets
+│   ├── icons
+│   ├── images
+│   ├── fonts
+│   └── logos
+│
+├── components
+│   ├── common
+│   ├── layout
+│   ├── Navbar
+│   └── Footer
+│
+├── layouts
+│
+├── pages
+│   ├── Home
+│   ├── About
+│   ├── Governance
+│   ├── Schools
+│   ├── Programs
+│   ├── Contact
+│   └── NotFound
+│
+├── sections
+│   ├── home
+│   ├── about
+│   ├── governance
+│   ├── schools
+│   ├── programs
+│   └── contact
+│
+├── routes
+│
+├── hooks
+│
+├── utils
+│
+└── App.tsx
+```
 
 ---
 
@@ -126,7 +149,7 @@ Clone the repository
 git clone https://github.com/yourusername/international-praxorium-web.git
 ```
 
-Navigate to the project
+Navigate into the project
 
 ```bash
 cd international-praxorium-web
@@ -138,19 +161,19 @@ Install dependencies
 npm install
 ```
 
-Run development server
+Start the development server
 
 ```bash
 npm run dev
 ```
 
-Build production
+Build for production
 
 ```bash
 npm run build
 ```
 
-Preview production
+Preview production build
 
 ```bash
 npm run preview
@@ -158,32 +181,99 @@ npm run preview
 
 ---
 
-## Performance
+## Design System
 
-- Optimized Images
-- Lazy Loaded Components
-- Reusable Components
-- Responsive Assets
-- Accessible HTML Structure
-- Smooth Animations
+### Typography
+
+| Element | Font |
+|----------|------|
+| Headings | EB Garamond |
+| Body | Inter |
+
+### Primary Colors
+
+| Color | Value |
+|---------|-----------|
+| Primary Maroon | #631015 |
+| Gold | #C9A96E |
+| Dark Navy | #0A192F |
+| Cream | #F8F4EC |
+| Black | #1A1C1B |
 
 ---
 
-## Author
+## Responsive Breakpoints
 
-**Divakaran S**
+| Device | Width |
+|---------|--------|
+| Mobile | <640px |
+| Small | ≥640px |
+| Medium | ≥768px |
+| Large | ≥1024px |
+| Extra Large | ≥1280px |
 
-Frontend Developer
+---
 
-- React
-- TypeScript
-- Node.js
-- Express.js
-- PostgreSQL
-- Tailwind CSS
+## Performance
+
+- Lazy loaded pages
+- Optimized images
+- Modular architecture
+- Reusable components
+- Optimized Tailwind utilities
+- Responsive assets
+
+---
+
+## Future Enhancements
+
+- CMS Integration
+- Authentication
+- Multi-language Support
+- Search
+- Newsletter
+- Blog
+- Events
+- Dynamic Content
+- SEO Optimization
+- Analytics
+
+---
+
+## Development
+
+```bash
+npm install
+
+npm run dev
+```
+
+Production
+
+```bash
+npm run build
+```
+
+Lint
+
+```bash
+npm run lint
+```
 
 ---
 
 ## License
 
-This project is created for educational and portfolio purposes.
+This project is developed exclusively for the International Praxorium.
+
+All rights reserved.
+
+---
+
+## Developed By
+
+**Divakaran S**
+
+Full-Stack Developer
+
+React • TypeScript • Vite • Tailwind CSS • Framer Motion
