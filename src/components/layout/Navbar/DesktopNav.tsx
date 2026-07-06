@@ -3,7 +3,7 @@ import { navItems } from "./navbar.data";
 
 const DesktopNav = () => {
   return (
-    <nav className="hidden xl:flex items-center gap-10">
+    <nav className="hidden xl:flex items-center gap-7 2xl:gap-8">
       {navItems.map((item) => (
         <NavItem key={item.href} item={item} />
       ))}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
-import { CircleUserRound } from "lucide-react";
+import signInIcon from "../../../assets/icons/Sign In Icon.svg";
 
 import Container from "../Container/Container";
 import DesktopNav from "./DesktopNav";
@@ -56,17 +56,27 @@ const Navbar = () => {
               <Link
                 to="/signin"
                 className="
-                  flex
-                  items-center
-                  gap-2
-                  text-sm
-                  font-medium
-                  text-[#111827]
-                  transition
-                  hover:text-[#741C28]
-                "
+    flex
+    items-center
+    gap-2
+
+    font-inter
+    font-medium
+
+    text-[15px]
+    text-[#1A1C1B]
+
+    transition-all
+    duration-300
+
+    hover:text-[#631015]
+  "
               >
-                <CircleUserRound size={20} />
+                <img
+                  src={signInIcon}
+                  alt="Sign In"
+                  className="h-5 w-5 object-contain"
+                />
 
                 <span>Sign In</span>
               </Link>

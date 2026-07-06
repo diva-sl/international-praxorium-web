@@ -86,35 +86,14 @@ gap-4
 sm:gap-5
 "
               >
-                <div
-                  className="
-flex
-shrink-0
-items-center
-justify-center
-
-h-16
-w-16
-
-sm:h-20
-sm:w-20
-
-lg:h-24
-lg:w-24
-"
-                >
+                <div className="flex h-24 w-24 shrink-0 items-center justify-center">
                   <img
                     src={stewardshipIcon}
                     alt="Stewardship"
                     className="
-h-10
-w-10
+h-16
+w-16
 
-sm:h-12
-sm:w-12
-
-lg:h-16
-lg:w-16
 "
                   />
                 </div>
